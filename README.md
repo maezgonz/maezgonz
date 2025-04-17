@@ -8,7 +8,7 @@
 🧠 Me apasiona todo lo relacionado con las telecomunicaciones, la automatización de procesos y las nuevas tecnologías. A lo largo de los años he adquirido habilidades sólidas en áreas como:
 
 - Redes móviles y fijas (OpenRAN, DU/BBU, Core)
-- Virtualización y Cloud Computing (AWS, Azure, GCP)
+- Virtualización y Cloud Computing (AWS, Azure, GCP, TCloud, Huawei Cloud)
 - Automatización e Infraestructura como código
 - DevOps y programación (Python, Java, Shell scripting)
 - Metodologías ágiles: Scrum, Kanban
