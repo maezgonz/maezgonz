@@ -1,4 +1,4 @@
-👋 ¡Hola! Soy Matías, Ingeniero en Telecomunicaciones con más de 14 años de experiencia en el sector, desarrollando mi carrera en Telefónica Argentina. A lo largo de este recorrido he participado en despliegues, operación, mantenimiento y optimización de redes móviles (2G/3G/4G/5G), tanto en el core como en la red de acceso, trabajando con tecnologías de fabricantes como Ericsson, Huawei, ZTE, IBM y más.
+👋 ¡Hola! Soy Matías, Ingeniero en Telecomunicaciones, +10 años de experiencia en el sector TIC desarrollando mi carrera en Telefónica Argentina. A lo largo de este recorrido he participado en despliegues, operación, mantenimiento y optimización de redes móviles (2G/3G/4G/5G), tanto en el core como en la red de acceso, trabajando con tecnologías de fabricantes como Ericsson, Huawei, ZTE, IBM y más.
 
 
 <p><img align="right" src="https://github.com/Adam-pw/Adam-pw/blob/main/animation_500_kxa883sd.gif" alt="adam-pw" /></p>
@@ -11,8 +11,8 @@
 - Virtualización y Cloud Computing (AWS, Azure, GCP, TCloud, Huawei Cloud)
 - Automatización e Infraestructura como código
 - DevOps y programación (Python, Java, Shell scripting)
-- Metodologías ágiles: Scrum, Kanban
-- Tecnologías emergentes: Blockchain, Inteligencia Artificial, IoT
+- Metodologías ágiles: Scrum, Kanban, Lean
+- Tecnologías emergentes: Blockchain, ML, DL, IA, IoT
 
 🔗 Estoy comprometido con el aprendizaje continuo, el trabajo colaborativo y el intercambio de conocimiento. Si compartimos intereses, ¡no dudes en conectar!
 
