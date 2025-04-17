@@ -1,5 +1,10 @@
 👋 ¡Hola! Soy Matías, Ingeniero en Telecomunicaciones con más de 14 años de experiencia en el sector, desarrollando mi carrera en Telefónica Argentina. A lo largo de este recorrido he participado en despliegues, operación, mantenimiento y optimización de redes móviles (2G/3G/4G/5G), tanto en el core como en la red de acceso, trabajando con tecnologías de fabricantes como Ericsson, Huawei, ZTE, IBM y más.
 
+
+<p><img align="right" src="https://github.com/Adam-pw/Adam-pw/blob/main/animation_500_kxa883sd.gif" alt="adam-pw" /></p>
+
+
+
 🧠 Me apasiona todo lo relacionado con las telecomunicaciones, la automatización de procesos y las nuevas tecnologías. A lo largo de los años he adquirido habilidades sólidas en áreas como:
 
 - Redes móviles y fijas (OpenRAN, DU/BBU, Core)
@@ -9,15 +14,13 @@
 - Metodologías ágiles: Scrum, Kanban
 - Tecnologías emergentes: Blockchain, Inteligencia Artificial, IoT
 
-🔗 También estoy comprometido con el aprendizaje continuo, el trabajo colaborativo y el intercambio de conocimiento. Si compartimos intereses, ¡no dudes en conectar!
+🔗 Estoy comprometido con el aprendizaje continuo, el trabajo colaborativo y el intercambio de conocimiento. Si compartimos intereses, ¡no dudes en conectar!
 
 
 📫 Contacto:
 - ✉️ matiasez.gonzalez@gmail.com
 - 🌍 [LinkedIn](https://www.linkedin.com/in/maezgonz)
 
-
-<p><img align="right" src="https://github.com/Adam-pw/Adam-pw/blob/main/animation_500_kxa883sd.gif" alt="adam-pw" /></p>
 
 
 ### 🛠 &nbsp;Tech Stack
@@ -84,6 +87,6 @@
 <a href="https://www.behance.net/maezgonz"><img src="https://img.shields.io/badge/-@maezgonz-1769FF?style=flat&logo=Behance&logoColor=white"/></a>
 </p>
 
------
 
+-----
 Last Edited on: 17/04/2025
