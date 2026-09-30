@@ -1,92 +1,56 @@
-👋 ¡Hola! Soy Matías, Ingeniero en Telecomunicaciones, +10 años de experiencia en el sector TIC desarrollando mi carrera en Telefónica Argentina. A lo largo de este recorrido he participado en despliegues, operación, mantenimiento y optimización de redes móviles (2G/3G/4G/5G), tanto en el core como en la red de acceso, trabajando con tecnologías de fabricantes como Ericsson, Huawei, ZTE, IBM y más.
+# Hi, I'm Matías González
 
+**Systems Engineer → High-Performance Computing & Quantitative Analysis**
 
-<p><img align="right" src="https://github.com/Adam-pw/Adam-pw/blob/main/animation_500_kxa883sd.gif" alt="adam-pw" /></p>
+I am a systems engineer based in **Spain**, currently pursuing an **MSc in High-Performance Computing** and running parallel workloads on **CESGA FinisTerrae-3** (Galician Supercomputing Center). I bring **10+ years of experience** from critical telecom infrastructure at **Telefónica Argentina** — deploying, operating and optimizing mobile networks (2G/3G/4G/5G) across core and access, working with Ericsson, Huawei, ZTE and IBM equipment.
 
+That background taught me to reason about **latency, throughput and reliability at scale** — the same principles I now apply to parallel computing and quantitative finance.
 
+## 🔭 What I'm Building
 
-🧠 Me apasiona todo lo relacionado con las telecomunicaciones, la automatización de procesos y las nuevas tecnologías. A lo largo de los años he adquirido habilidades sólidas en áreas como:
+| | Project | Focus |
+|---|---|---|
+| ⚡ | **[hpc-parallel-algorithms](https://github.com/maezgonz/hpc-parallel-algorithms)** | Parallel algorithms in C with OpenMP/MPI, benchmarked on FinisTerrae-3 through Slurm job arrays |
+| 📈 | **[quant-trading-models](https://github.com/maezgonz/quant-trading-models)** | Monte Carlo projections, algorithmic trading strategies and dark-mode financial analytics in Python |
+| 📡 | **[telco-network-automation](https://github.com/maezgonz/telco-network-automation)** | Network automation and infrastructure-as-code, from 10+ years in carrier-grade telecom |
 
-- Redes móviles y fijas (OpenRAN, DU/BBU, Core)
-- Virtualización y Cloud Computing (AWS, Azure, GCP, TCloud, Huawei Cloud)
-- Automatización e Infraestructura como código
-- DevOps y programación (Python, Java, Shell scripting)
-- Metodologías ágiles: Scrum, Kanban, Lean
-- Tecnologías emergentes: Blockchain, ML, DL, IA, IoT
+## 🛠 Core Stack
 
-🔗 Estoy comprometido con el aprendizaje continuo, el trabajo colaborativo y el intercambio de conocimiento. Si compartimos intereses, ¡no dudes en conectar!
-
-
-📫 Contacto:
-- ✉️ matiasez.gonzalez@gmail.com
-- 🌍 [LinkedIn](https://www.linkedin.com/in/maezgonz)
-
-
-
-### 🛠 &nbsp;Tech Stack
-
-<p align="left"> <a href="https://developer.android.com" target="_blank" rel="noreferrer"> <img
-      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg"
-      alt="android" width="40" height="40" /> </a> <a href="https://getbootstrap.com" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg"
-      alt="bootstrap" width="40" height="40" /> </a> <a href="https://www.cprogramming.com/" target="_blank"
-    rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg"
-      alt="c" width="40" height="40" /> </a> <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg"
-      alt="cplusplus" width="40" height="40" /> </a> <a href="https://www.w3schools.com/css/" target="_blank"
-    rel="noreferrer"> <img
-      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3"
-      width="40" height="40" /> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img
-      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
-      alt="html5" width="40" height="40" /> </a> <a href="https://www.adobe.com/in/products/illustrator.html"
-    target="_blank" rel="noreferrer"> <img
-      src="https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg" alt="illustrator" width="40"
-      height="40" /> </a> <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img
-      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40"
-      height="40" /> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"
-    rel="noreferrer"> <img
-      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
-      alt="javascript" width="40" height="40" /> </a> <a href="https://kotlinlang.org" target="_blank" rel="noreferrer">
-    <img src="https://www.vectorlogo.zone/logos/kotlinlang/kotlinlang-icon.svg" alt="kotlin" width="40" height="40" />
-  </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img
-      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
-      alt="mysql" width="40" height="40" /> </a> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img
-      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
-      alt="nodejs" width="40" height="40" /> </a> <a href="https://pandas.pydata.org/" target="_blank" rel="noreferrer">
-    <img
-      src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg"
-      alt="pandas" width="40" height="40" /> </a> <a href="https://www.photoshop.com/en" target="_blank"
-    rel="noreferrer"> <img
-      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" alt="photoshop"
-      width="40" height="40" /> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img
-      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python"
-      width="40" height="40" /> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img
-      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
-      alt="react" width="40" height="40" /> </a> <a href="https://sass-lang.com" target="_blank" rel="noreferrer"> <img
-      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="40"
-      height="40" /> </a> </p>
-
-### ⚙️ &nbsp;GitHub Analytics
-
-<p align="center">
-<a href="https://github.com/AVS1508">
-  <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api?username=maezgonz&show_icons=true&theme=algolia&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=maezgonz&layout=compact&langs_count=8&theme=algolia"/>
-</a>
+<p align="left">
+  <a href="https://www.cprogramming.com"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="C" width="40" height="40"/></a>
+  <a href="https://www.w3schools.com/cpp/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="C++" width="40" height="40"/></a>
+  <a href="https://www.openmp.org"><img src="https://img.shields.io/badge/OpenMP-4A90D9?style=for-the-badge&labelColor=1B3A57" alt="OpenMP" height="40"/></a>
+  <a href="https://www.mpi-forum.org"><img src="https://img.shields.io/badge/MPI-2E7D32?style=for-the-badge&labelColor=143A1E" alt="MPI" height="40"/></a>
+  <a href="https://slurm.schedmd.com"><img src="https://img.shields.io/badge/Slurm-6A1B9A?style=for-the-badge&labelColor=2E1045" alt="Slurm" height="40"/></a>
+  <a href="https://www.python.org"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python" width="40" height="40"/></a>
+  <a href="https://numpy.org"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/numpy/numpy-original.svg" alt="NumPy" width="40" height="40"/></a>
+  <a href="https://pandas.pydata.org"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40"/></a>
+  <a href="https://matplotlib.org"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/matplotlib/matplotlib-original.svg" alt="matplotlib" width="40" height="40"/></a>
+  <a href="https://www.linux.org"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="Linux" width="40" height="40"/></a>
 </p>
 
-### 🤝🏻 &nbsp;Connect with Me
+## 🎓 Now
+
+- 📚 MSc in High-Performance Computing (in progress)
+- 🖥 Running MPI/OpenMP workloads on CESGA FinisTerrae-3
+- 📈 Building quantitative models with Python (pandas, NumPy, matplotlib)
+
+## ⚙️ GitHub Analytics
 
 <p align="center">
-<a href="https://www.maezgonz.com"><img src="https://img.shields.io/badge/www.maezgonz.com-3423A6?style=flat&logo=Google-Chrome&logoColor=white"/></a>
-<a href="https://linkedin.com/in/maezgonz"><img src="https://img.shields.io/badge/-maezgonzstyle=flat&logo=Linkedin&logoColor=white"/></a>
-<a href="mailto:matiasez.gonzalez@gmail.com"><img src="https://img.shields.io/badge/-matiasez.gonzalez@gmail.com-D14836?style=flat&logo=Gmail&logoColor=white"/></a>
-<a href="https://instagram.com/maezgonz"><img src="https://img.shields.io/badge/-@maezgonz-E4405F?style=flat&logo=Instagram&logoColor=white"/></a>
-<a href="https://facebook.com/maezgonz"><img src="https://img.shields.io/badge/-@maezgonz-1877F2?style=flat&logo=Facebook&logoColor=white"/></a>
-<a href="https://www.pinterest.ca/maezgonz"><img src="https://img.shields.io/badge/-@maezgonz-BD081C?style=flat&logo=Pinterest&logoColor=white"/></a>
-<a href="https://www.behance.net/maezgonz"><img src="https://img.shields.io/badge/-@maezgonz-1769FF?style=flat&logo=Behance&logoColor=white"/></a>
+  <img height="170em" src="https://github-readme-stats-eight-theta.vercel.app/api?username=maezgonz&show_icons=true&theme=radical&include_all_commits=true&count_private=true"/>
+  <img height="170em" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=maezgonz&layout=compact&langs_count=8&theme=radical"/>
 </p>
 
+## 📫 Contact
 
------
-Last Edited on: 17/04/2025
+<p align="left">
+  <a href="https://www.linkedin.com/in/maezgonz"><img src="https://img.shields.io/badge/LinkedIn-maezgonz-0A66C2?style=flat&logo=LinkedIn&logoColor=white"/></a>
+  <a href="mailto:matiasez.gonzalez@gmail.com"><img src="https://img.shields.io/badge/Email-matiasez.gonzalez@gmail.com-D14836?style=flat&logo=Gmail&logoColor=white"/></a>
+  <a href="https://www.maezgonz.com"><img src="https://img.shields.io/badge/Web-www.maezgonz.com-3423A6?style=flat&logo=Google-Chrome&logoColor=white"/></a>
+  <a href="https://x.com/maezgonz"><img src="https://img.shields.io/badge/X-@maezgonz-000000?style=flat&logo=X&logoColor=white"/></a>
+</p>
+
+---
+
+Last edited on: 30/09/2026
