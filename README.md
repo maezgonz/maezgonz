@@ -35,6 +35,14 @@ That background taught me to reason about **latency, throughput and reliability 
 - 🖥 Running MPI/OpenMP workloads on CESGA FinisTerrae-3
 - 📈 Building quantitative models with Python (pandas, NumPy, matplotlib)
 
+## ⚡ Highlights (measured on FinisTerrae-3)
+
+- 🚀 **2.66M paths/s** — OpenMP GBM Monte Carlo engine (10⁹ paths, antithetic variates)
+- 📈 **17.6×** strong-scaling speedup on 64 cores (10⁹-sample kernel)
+- 🔗 **~2.8 µs** inter-node RTT / 12.2 GB/s — InfiniBand ping-pong benchmark
+- 🌐 Hybrid MPI+OpenMP Laplace solver across 2 physical nodes
+- ✅ C engine cross-validated against the NumPy kernel (0.08% mean diff)
+
 ## ⚙️ GitHub Analytics
 
 <p align="center">
