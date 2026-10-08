@@ -46,8 +46,8 @@ That background taught me to reason about **latency, throughput and reliability 
 ## ⚙️ GitHub Analytics
 
 <p align="center">
-  <img height="170em" src="https://github-readme-stats-eight-theta.vercel.app/api?username=maezgonz&show_icons=true&theme=radical&include_all_commits=true&count_private=true&v=2"/>
-  <img height="170em" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=maezgonz&layout=compact&langs_count=8&theme=radical&v=2"/>
+  <img height="170em" src="https://github-readme-stats-deploy-phi.vercel.app/api?username=maezgonz&show_icons=true&theme=radical&include_all_commits=true&count_private=true"/>
+  <img height="170em" src="https://github-readme-stats-deploy-phi.vercel.app/api/top-langs/?username=maezgonz&layout=compact&langs_count=8&theme=radical"/>
 </p>
 
 ## 📫 Contact
