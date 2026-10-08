@@ -1,8 +1,8 @@
-# Hi, I'm Matías González
+﻿# Hi, I'm Matías González
 
 **Systems Engineer → High-Performance Computing & Quantitative Analysis**
 
-I am a systems engineer based in **Spain**, currently pursuing an **MSc in High-Performance Computing** and running parallel workloads on **CESGA FinisTerrae-3** (Galician Supercomputing Center). I bring **10+ years of experience** from critical telecom infrastructure at **Telefónica Argentina** — deploying, operating and optimizing mobile networks (2G/3G/4G/5G) across core and access, working with Ericsson, Huawei, ZTE and IBM equipment.
+I am a systems engineer based in **Spain**, currently pursuing an **MSc in High-Performance Computing** and running parallel workloads on **CESGA FinisTerrae-3** (Galician Supercomputing Center). I bring **12 years of experience** from critical telecom infrastructure at **Telefónica Argentina** — deploying, operating and optimizing mobile networks (2G/3G/4G/5G) across core and access, working with Ericsson, Huawei, ZTE and IBM equipment.
 
 That background taught me to reason about **latency, throughput and reliability at scale** — the same principles I now apply to parallel computing and quantitative finance.
 
@@ -12,7 +12,7 @@ That background taught me to reason about **latency, throughput and reliability 
 |---|---|---|
 | ⚡ | **[hpc-parallel-algorithms](https://github.com/maezgonz/hpc-parallel-algorithms)** | Parallel algorithms in C with OpenMP/MPI, benchmarked on FinisTerrae-3 through Slurm job arrays |
 | 📈 | **[quant-trading-models](https://github.com/maezgonz/quant-trading-models)** | Monte Carlo projections, algorithmic trading strategies and dark-mode financial analytics in Python |
-| 📡 | **[telco-network-automation](https://github.com/maezgonz/telco-network-automation)** | Network automation and infrastructure-as-code, from 10+ years in carrier-grade telecom |
+| 📡 | **[telco-network-automation](https://github.com/maezgonz/telco-network-automation)** | Network automation and infrastructure-as-code, from 12 years in carrier-grade telecom |
 
 ## 🛠 Core Stack
 
@@ -54,7 +54,7 @@ That background taught me to reason about **latency, throughput and reliability 
 
 <p align="left">
   <a href="https://www.linkedin.com/in/maezgonz"><img src="https://img.shields.io/badge/LinkedIn-maezgonz-0A66C2?style=flat&logo=LinkedIn&logoColor=white"/></a>
-  <a href="mailto:matiasez.gonzalez@gmail.com"><img src="https://img.shields.io/badge/Email-matiasez.gonzalez@gmail.com-D14836?style=flat&logo=Gmail&logoColor=white"/></a>
+  <a href="mailto:matiasez.gonzalez@gmail.com"><img src="https://img.shields.io/badge/Email-Contact%20me-34A853?style=flat&logo=Gmail&logoColor=white"/></a>
   <a href="https://www.maezgonz.com"><img src="https://img.shields.io/badge/Web-www.maezgonz.com-3423A6?style=flat&logo=Google-Chrome&logoColor=white"/></a>
   <a href="https://x.com/maezgonz"><img src="https://img.shields.io/badge/X-@maezgonz-000000?style=flat&logo=X&logoColor=white"/></a>
 </p>
