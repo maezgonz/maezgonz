@@ -2,7 +2,7 @@
 
 **Systems Engineer → High-Performance Computing & Quantitative Analysis**
 
-I am a systems engineer based in **Spain**, currently pursuing an **MSc in High-Performance Computing** and running parallel workloads on **CESGA FinisTerrae-3** (Galician Supercomputing Center). I bring **10+ years of experience** from critical telecom infrastructure at **Telefónica Argentina** — deploying, operating and optimizing mobile networks (2G/3G/4G/5G) across core and access, working with Ericsson, Huawei, ZTE and IBM equipment.
+I am a systems engineer based in **Spain**, currently pursuing an **MSc in High-Performance Computing** and running parallel workloads on **CESGA FinisTerrae-3** (Galician Supercomputing Center). I bring **+12 years of experience** from critical telecom infrastructure at **Telefónica Argentina** — deploying, operating and optimizing mobile networks (2G/3G/4G/5G) across core and access, working with Ericsson, Huawei, ZTE and IBM equipment.
 
 That background taught me to reason about **latency, throughput and reliability at scale** — the same principles I now apply to parallel computing and quantitative finance.
 
