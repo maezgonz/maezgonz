@@ -11,8 +11,11 @@ That background taught me to reason about **latency, throughput and reliability 
 | | Project | Focus |
 |---|---|---|
 | ⚡ | **[hpc-parallel-algorithms](https://github.com/maezgonz/hpc-parallel-algorithms)** | Parallel algorithms in C with OpenMP/MPI, benchmarked on FinisTerrae-3 through Slurm job arrays |
-| 📈 | **[quant-trading-models](https://github.com/maezgonz/quant-trading-models)** | Monte Carlo projections, algorithmic trading strategies and dark-mode financial analytics in Python |
-| 📡 | **[telco-network-automation](https://github.com/maezgonz/telco-network-automation)** | Network automation and infrastructure-as-code, from 12 years in carrier-grade telecom |
+| 📈 | **[quant-trading-models](https://github.com/maezgonz/quant-trading-models)** | Monte Carlo projections, Black-Scholes Greeks, risk metrics and a C GBM engine cross-validated against NumPy |
+| 📡 | **[telco-network-automation](https://github.com/maezgonz/telco-network-automation)** | Network automation: parallel fleet prober and config drift detection against golden baselines |
+| 📚 | **[telco-engineering-handbook](https://github.com/maezgonz/telco-engineering-handbook)** | Carrier-grade knowledge base (7 docs: KPIs 3GPP, alarm correlation, stress testing, EMF) deployed as a site |
+| 📐 | **[radiolink-clearance](https://github.com/maezgonz/radiolink-clearance)** | ITU-R P.530 microwave radiolink clearance engine: Fresnel zones, earth bulge, tower optimization |
+| 📄 | **[cv](https://github.com/maezgonz/cv)** | Auto-rendered PDF curriculum vitae via Quarto CI pipeline |
 
 ## 🛠 Core Stack
 
