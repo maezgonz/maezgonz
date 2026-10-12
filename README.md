@@ -12,6 +12,8 @@ That background taught me to reason about **latency, throughput and reliability 
 |---|---|---|
 | ⚡ | **[hpc-parallel-algorithms](https://github.com/maezgonz/hpc-parallel-algorithms)** | Parallel algorithms in C with OpenMP/MPI, benchmarked on FinisTerrae-3 through Slurm job arrays |
 | 📈 | **[quant-trading-models](https://github.com/maezgonz/quant-trading-models)** | Monte Carlo projections, Black-Scholes Greeks, risk metrics and a C GBM engine cross-validated against NumPy |
+| 🧪 | **[quant-research-lab](https://github.com/maezgonz/quant-research-lab)** | Research codebase: Argentine market data connectors (BCRA, BYMA, CCL/MEP), HRP allocator, Monte Carlo crypto engine, RBF/GP forecasting |
+| 📊 | **[bi-sap-supply-chain](https://github.com/maezgonz/bi-sap-supply-chain)** | SAP procurement BI case study: star schema, Power Query ETL, DAX KPI catalog, multi-audience storytelling (sanitized data) |
 | 📡 | **[telco-network-automation](https://github.com/maezgonz/telco-network-automation)** | Network automation: parallel fleet prober and config drift detection against golden baselines |
 | 📚 | **[telco-engineering-handbook](https://github.com/maezgonz/telco-engineering-handbook)** | Carrier-grade knowledge base (7 docs: KPIs 3GPP, alarm correlation, stress testing, EMF) deployed as a site |
 | 📐 | **[radiolink-clearance](https://github.com/maezgonz/radiolink-clearance)** | ITU-R P.530 microwave radiolink clearance engine: Fresnel zones, earth bulge, tower optimization |
