@@ -1,0 +1,40 @@
+name: Regenerate profile dashboard
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "metrics.json"
+      - "scripts/gen_dashboard.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install matplotlib
+        run: pip install matplotlib
+
+      - name: Generate dashboard
+        run: python scripts/gen_dashboard.py
+
+      - name: Commit if changed
+        run: |
+          git config user.name "maezgonz"
+          git config user.email "matiasez.gonzalez@gmail.com"
+          if git diff --quiet profile_dashboard.png; then
+            echo "No changes to dashboard"
+          else
+            git add profile_dashboard.png
+            git commit -m "ci: auto-regenerate dashboard from metrics.json"
+            git push
+          fi

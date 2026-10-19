@@ -1,0 +1,28 @@
+{
+  "strong_scaling_speedup": "25.2×",
+  "strong_scaling_note": "64 cores, FT3",
+  "gbm_throughput": "2.66M/s",
+  "gbm_note": "C + OpenMP, 10⁹ paths",
+  "infiniband_rtt": "2.8 µs",
+  "infiniband_rtt_note": "MPI ping-pong, 2 nodes",
+  "infiniband_bw": "12.2 GB/s",
+  "infiniband_bw_note": "8 MiB messages",
+  "gpu_cpu": "310s / 867s / 135s",
+  "gpu_cpu_note": "CPU / GPU naive / GPU cuDNN",
+  "repos": [
+    "hpc-parallel-algorithms     C / MPI / OpenMP / Slurm",
+    "quant-trading-models       Python / Monte Carlo / B-S",
+    "quant-research-lab         Python / ML / GPU benchmarks",
+    "telco-network-automation   Python / fleet probing",
+    "telco-engineering-handbook 7 docs / live website",
+    "radiolink-clearance        ITU-R P.530 / Fresnel zones"
+  ],
+  "career_stages": [
+    [0.05, "Electrical\n2009-11", "#FF7A59"],
+    [0.18, "RAN Eng.\n2012-15", "#4C9AFF"],
+    [0.31, "Core Net\n2015-17", "#D2A8FF"],
+    [0.44, "RAN Systems\n2017-21", "#9ECB45"],
+    [0.57, "5G / O-RAN\n2021-26", "#4C9AFF"],
+    [0.73, "MSc HPC\n2026-27", "#FF7A59"]
+  ]
+}
