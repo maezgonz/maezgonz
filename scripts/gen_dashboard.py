@@ -7,10 +7,13 @@ metrics file and renders the dashboard PNG. The workflow in
 
 from __future__ import annotations
 
+import argparse
+import filecmp
 import json
 import os
 import re
 import sys
+import tempfile
 
 import matplotlib
 
@@ -100,7 +103,7 @@ def load_metrics() -> dict:
     return metrics
 
 
-def render(metrics: dict) -> None:
+def render(metrics: dict, output_path: str = OUT) -> None:
     """Render the dashboard PNG."""
     fig = plt.figure(figsize=(16, 9), dpi=150, facecolor=BG)
 
@@ -170,11 +173,47 @@ def render(metrics: dict) -> None:
     fig.text(0.87, 0.095, "→ HPC & Quant", ha="left", va="center", fontsize=11, color=A2,
              fontweight="bold", transform=fig.transFigure)
 
-    out = os.path.abspath(OUT)
+    out = os.path.abspath(output_path)
     fig.savefig(out, facecolor=BG, bbox_inches="tight", pad_inches=0.3)
     print(f"saved {out}")
 
 
+def check_dashboard_is_up_to_date(metrics: dict) -> None:
+    """Render to a temp file and fail if committed dashboard is stale."""
+    committed = os.path.abspath(OUT)
+    if not os.path.exists(committed):
+        raise FileNotFoundError(f"Committed dashboard file not found: {committed}")
+
+    with tempfile.NamedTemporaryFile(suffix=".png", delete=False) as tmp:
+        tmp_path = tmp.name
+
+    try:
+        render(metrics, output_path=tmp_path)
+        if not filecmp.cmp(committed, tmp_path, shallow=False):
+            raise ValueError(
+                "profile_dashboard.png is outdated. Run 'python scripts/gen_dashboard.py' and commit changes."
+            )
+        print("dashboard is up to date")
+    finally:
+        if os.path.exists(tmp_path):
+            os.remove(tmp_path)
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="Generate or verify profile dashboard image.")
+    parser.add_argument(
+        "--check",
+        action="store_true",
+        help="Validate metrics and verify committed profile_dashboard.png is up to date.",
+    )
+    return parser.parse_args()
+
+
 if __name__ == "__main__":
-    render(load_metrics())
+    args = parse_args()
+    loaded_metrics = load_metrics()
+    if args.check:
+        check_dashboard_is_up_to_date(loaded_metrics)
+    else:
+        render(loaded_metrics)
     sys.exit(0)

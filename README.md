@@ -66,3 +66,15 @@ The numbers in my dashboard aren't estimates — they're **measured on CESGA Fin
 </p>
 
 ---
+
+## 🔄 Cómo actualizar métricas del dashboard
+
+1. Edita `metrics.json`.
+2. Verifica localmente:
+   - `python -m pip install -r requirements.txt`
+   - `python scripts/gen_dashboard.py`
+3. Haz commit de `metrics.json` y `profile_dashboard.png`.
+4. En PR, el workflow **Validate dashboard inputs** valida schema/tests y verifica que `profile_dashboard.png` esté actualizado.
+5. En merge a `main`, el workflow **Regenerate profile dashboard** re-genera automáticamente la imagen si corresponde.
+
+---
