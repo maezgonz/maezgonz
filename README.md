@@ -4,6 +4,8 @@
 
 ### Systems Engineer → High-Performance Computing & Quantitative Analysis
 
+[![Regenerate profile dashboard](https://github.com/maezgonz/maezgonz/actions/workflows/dashboard.yml/badge.svg)](https://github.com/maezgonz/maezgonz/actions/workflows/dashboard.yml)
+
 **17 years mission-critical infrastructure** · **12 at Telefónica (2G→5G)** · **MSc HPC @ USC (BEME scholar)**
 
 <img src="profile_dashboard.png" width="100%" alt="Portfolio dashboard: benchmarks, career timeline, GPU vs CPU" />
@@ -64,5 +66,3 @@ The numbers in my dashboard aren't estimates — they're **measured on CESGA Fin
 </p>
 
 ---
-
-Last edited on: 15/10/2026
