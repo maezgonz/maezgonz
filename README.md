@@ -24,6 +24,20 @@
 I design and optimize high-reliability systems and computational workloads.  
 The benchmark figures shown here are measured on **CESGA FinisTerrae-3**.
 
+## Work Model & Availability
+
+- **EU citizen based in Galicia (Spain)**.
+- **EU remote-only roles** (full-time or flexible models).
+- Open to **asynchronous/flexible schedules** compatible with MSc HPC commitments.
+- Occasional travel is possible when planned in advance.
+
+## Evidence Model (Recruiter-Friendly)
+
+- **E1 — Corporate Experience:** production roles in telecom operations/systems engineering.
+- **E2 — Formal Education & Certifications:** accredited degrees, MSc HPC (in progress), and vendor/cloud certifications.
+- **E3 — Public Portfolio Evidence:** GitHub repositories with reproducible code and documented outcomes.
+- **E4 — Applied/Academic Learning:** in-progress or study-driven competencies, never presented as corporate production experience.
+
 ## Highlights
 
 - **25.2× strong-scaling speedup** on 64 cores (FinisTerrae-3).
@@ -35,12 +49,12 @@ The benchmark figures shown here are measured on **CESGA FinisTerrae-3**.
 
 | Repository | Focus | Stack |
 |---|---|---|
-| **[hpc-parallel-algorithms](https://github.com/maezgonz/hpc-parallel-algorithms)** | Parallel algorithms and numerical workloads on multi-core/HPC environments | C · MPI · OpenMP · Slurm |
-| **[quant-research-lab](https://github.com/maezgonz/quant-research-lab)** | End-to-end quantitative research workflows with ML and GPU benchmarks | Python · TensorFlow · scikit-learn |
-| **[quant-trading-models](https://github.com/maezgonz/quant-trading-models)** | Pricing and risk tooling for quantitative finance | Python · NumPy · pandas |
 | **[telco-network-automation](https://github.com/maezgonz/telco-network-automation)** | Network automation and fleet-level operational checks | Python |
 | **[telco-engineering-handbook](https://github.com/maezgonz/telco-engineering-handbook)** | Telecom engineering reference and operations knowledge base | MkDocs · 3GPP · ITU-T |
 | **[radiolink-clearance](https://github.com/maezgonz/radiolink-clearance)** | Microwave link planning using ITU-based propagation and Fresnel models | Python · Streamlit |
+| **[hpc-parallel-algorithms](https://github.com/maezgonz/hpc-parallel-algorithms)** | **Applied/Academic Project** — parallel algorithms and numerical workloads on multi-core/HPC environments | C · MPI · OpenMP · Slurm |
+| **[quant-research-lab](https://github.com/maezgonz/quant-research-lab)** | **Applied/Academic Project** — end-to-end quantitative research workflows with ML and GPU benchmarks | Python · TensorFlow · scikit-learn |
+| **[quant-trading-models](https://github.com/maezgonz/quant-trading-models)** | **Applied/Academic Project** — pricing and risk tooling for quantitative finance | Python · NumPy · pandas |
 
 ## Core Stack
 
