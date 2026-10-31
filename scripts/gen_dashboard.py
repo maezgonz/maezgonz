@@ -152,11 +152,11 @@ def render(metrics: dict, output_path: str = OUT) -> None:
     rect3 = plt.Rectangle((0.53, 0.28), 0.45, 0.26, facecolor="#161b22",
                           edgecolor=BORDER, linewidth=1, transform=fig.transFigure, zorder=1)
     fig.add_artist(rect3)
-    fig.text(0.755, 0.49, "Portfolio — 8 public repos, all CI green", ha="center", va="center",
+    fig.text(0.755, 0.49, f"Portfolio — {len(metrics['repos'])} selected repos", ha="center", va="center",
              fontsize=11, color=FG, fontweight="bold", transform=fig.transFigure, zorder=2)
 
     for j, line in enumerate(metrics["repos"]):
-        fig.text(0.56, 0.45 - j * 0.023, line, ha="left", va="center", fontsize=9, color=MUTED,
+        fig.text(0.56, 0.45 - j * 0.022, line, ha="left", va="center", fontsize=8.5, color=MUTED,
                  family="monospace", transform=fig.transFigure, zorder=2)
 
     fig.text(0.5, 0.22, "CAREER TIMELINE", ha="center", va="center", fontsize=10, color=FG,

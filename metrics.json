@@ -10,12 +10,12 @@
   "gpu_cpu": "310s / 867s / 135s",
   "gpu_cpu_note": "CPU / GPU naive / GPU cuDNN",
   "repos": [
-    "hpc-parallel-algorithms     C / MPI / OpenMP / Slurm",
-    "quant-trading-models       Python / Monte Carlo / B-S",
-    "quant-research-lab         Python / ML / GPU benchmarks",
-    "telco-network-automation   Python / fleet probing",
-    "telco-engineering-handbook 7 docs / live website",
-    "radiolink-clearance        ITU-R P.530 / Fresnel zones"
+    "hpc-parallel-algorithms   C / MPI / OpenMP / Slurm",
+    "quant-trading-models      Python / pricing / risk",
+    "quant-research-lab        Python / ML / GPU",
+    "telco-network-automation  Python / operations automation",
+    "telco-engineering-handbook Knowledge base / live docs",
+    "radiolink-clearance       ITU-R P.530 / Fresnel modeling"
   ],
   "career_stages": [
     [0.05, "Electrical\n2009-11", "#FF7A59"],
