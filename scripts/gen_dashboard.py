@@ -7,9 +7,13 @@ metrics file and renders the dashboard PNG. The workflow in
 
 from __future__ import annotations
 
+import argparse
+import filecmp
 import json
 import os
+import re
 import sys
+import tempfile
 
 import matplotlib
 
@@ -28,46 +32,78 @@ A4 = "#D2A8FF"
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "..", "profile_dashboard.png")
+METRICS_PATH = os.path.join(HERE, "..", "metrics.json")
+
+REQUIRED_STRING_KEYS = [
+    "strong_scaling_speedup",
+    "strong_scaling_note",
+    "gbm_throughput",
+    "gbm_note",
+    "infiniband_rtt",
+    "infiniband_rtt_note",
+    "infiniband_bw",
+    "infiniband_bw_note",
+    "gpu_cpu",
+    "gpu_cpu_note",
+]
+
+
+def validate_metrics(metrics: dict, metrics_path: str) -> None:
+    """Validate metrics.json structure and required value formats."""
+    if not isinstance(metrics, dict):
+        raise ValueError(f"{metrics_path} must contain a JSON object at the top level.")
+
+    missing = [key for key in REQUIRED_STRING_KEYS if key not in metrics]
+    if missing:
+        raise ValueError(f"Missing required keys in {metrics_path}: {', '.join(missing)}")
+
+    for key in REQUIRED_STRING_KEYS:
+        if not isinstance(metrics[key], str) or not metrics[key].strip():
+            raise ValueError(f"Key '{key}' in {metrics_path} must be a non-empty string.")
+
+    gpu_parts = metrics["gpu_cpu"].split(" / ")
+    if len(gpu_parts) != 3 or any(not re.fullmatch(r"\d+s", part) for part in gpu_parts):
+        raise ValueError(
+            "Key 'gpu_cpu' must have format '310s / 867s / 135s' (three integer-second values)."
+        )
+
+    repos = metrics.get("repos")
+    if not isinstance(repos, list) or not repos:
+        raise ValueError(f"Key 'repos' in {metrics_path} must be a non-empty list of strings.")
+    if any(not isinstance(repo, str) or not repo.strip() for repo in repos):
+        raise ValueError(f"Every entry in 'repos' in {metrics_path} must be a non-empty string.")
+
+    career_stages = metrics.get("career_stages")
+    if not isinstance(career_stages, list) or not career_stages:
+        raise ValueError(f"Key 'career_stages' in {metrics_path} must be a non-empty list.")
+
+    for i, stage in enumerate(career_stages):
+        if not isinstance(stage, list) or len(stage) != 3:
+            raise ValueError(
+                f"career_stages[{i}] must be a list with three elements: [position, label, color]."
+            )
+        position, label, color = stage
+        if not isinstance(position, (int, float)) or not (0 <= float(position) <= 1):
+            raise ValueError(f"career_stages[{i}][0] must be a number between 0 and 1.")
+        if not isinstance(label, str) or not label.strip():
+            raise ValueError(f"career_stages[{i}][1] must be a non-empty string.")
+        if not isinstance(color, str) or not re.fullmatch(r"#[0-9a-fA-F]{6}", color):
+            raise ValueError(f"career_stages[{i}][2] must be a hex color like '#4C9AFF'.")
 
 
 def load_metrics() -> dict:
-    """Load benchmark metrics from metrics.json (or defaults)."""
-    metrics_path = os.path.join(HERE, "..", "metrics.json")
-    defaults = {
-        "strong_scaling_speedup": "25.2×",
-        "strong_scaling_note": "64 cores, FT3",
-        "gbm_throughput": "2.66M/s",
-        "gbm_note": "C + OpenMP, 10⁹ paths",
-        "infiniband_rtt": "2.8 µs",
-        "infiniband_rtt_note": "MPI ping-pong, 2 nodes",
-        "infiniband_bw": "12.2 GB/s",
-        "infiniband_bw_note": "8 MiB messages",
-        "gpu_cpu": "310s / 867s / 135s",
-        "gpu_cpu_note": "CPU / GPU naive / GPU cuDNN",
-        "repos": [
-            "hpc-parallel-algorithms     C / MPI / OpenMP / Slurm",
-            "quant-trading-models       Python / Monte Carlo / B-S",
-            "quant-research-lab         Python / ML / GPU benchmarks",
-            "telco-network-automation   Python / fleet probing",
-            "telco-engineering-handbook 7 docs / live website",
-            "radiolink-clearance        ITU-R P.530 / Fresnel zones",
-        ],
-        "career_stages": [
-            (0.05, "Electrical\n2009-11", A2),
-            (0.18, "RAN Eng.\n2012-15", A1),
-            (0.31, "Core Net\n2015-17", A4),
-            (0.44, "RAN Systems\n2017-21", A3),
-            (0.57, "5G / O-RAN\n2021-26", A1),
-            (0.73, "MSc HPC\n2026-27", A2),
-        ],
-    }
-    if os.path.exists(metrics_path):
-        with open(metrics_path, "r", encoding="utf-8") as f:
-            return {**defaults, **json.load(f)}
-    return defaults
+    """Load benchmark metrics from metrics.json and validate them."""
+    if not os.path.exists(METRICS_PATH):
+        raise FileNotFoundError(f"Required metrics file not found: {METRICS_PATH}")
+
+    with open(METRICS_PATH, "r", encoding="utf-8") as f:
+        metrics = json.load(f)
+
+    validate_metrics(metrics, METRICS_PATH)
+    return metrics
 
 
-def render(metrics: dict) -> None:
+def render(metrics: dict, output_path: str = OUT) -> None:
     """Render the dashboard PNG."""
     fig = plt.figure(figsize=(16, 9), dpi=150, facecolor=BG)
 
@@ -116,11 +152,11 @@ def render(metrics: dict) -> None:
     rect3 = plt.Rectangle((0.53, 0.28), 0.45, 0.26, facecolor="#161b22",
                           edgecolor=BORDER, linewidth=1, transform=fig.transFigure, zorder=1)
     fig.add_artist(rect3)
-    fig.text(0.755, 0.49, "Portfolio — 8 public repos, all CI green", ha="center", va="center",
+    fig.text(0.755, 0.49, f"Portfolio — {len(metrics['repos'])} selected repos", ha="center", va="center",
              fontsize=11, color=FG, fontweight="bold", transform=fig.transFigure, zorder=2)
 
     for j, line in enumerate(metrics["repos"]):
-        fig.text(0.56, 0.45 - j * 0.023, line, ha="left", va="center", fontsize=9, color=MUTED,
+        fig.text(0.56, 0.45 - j * 0.022, line, ha="left", va="center", fontsize=8.5, color=MUTED,
                  family="monospace", transform=fig.transFigure, zorder=2)
 
     fig.text(0.5, 0.22, "CAREER TIMELINE", ha="center", va="center", fontsize=10, color=FG,
@@ -137,11 +173,47 @@ def render(metrics: dict) -> None:
     fig.text(0.87, 0.095, "→ HPC & Quant", ha="left", va="center", fontsize=11, color=A2,
              fontweight="bold", transform=fig.transFigure)
 
-    out = os.path.abspath(OUT)
+    out = os.path.abspath(output_path)
     fig.savefig(out, facecolor=BG, bbox_inches="tight", pad_inches=0.3)
     print(f"saved {out}")
 
 
+def check_dashboard_is_up_to_date(metrics: dict) -> None:
+    """Render to a temp file and fail if committed dashboard is stale."""
+    committed = os.path.abspath(OUT)
+    if not os.path.exists(committed):
+        raise FileNotFoundError(f"Committed dashboard file not found: {committed}")
+
+    with tempfile.NamedTemporaryFile(suffix=".png", delete=False) as tmp:
+        tmp_path = tmp.name
+
+    try:
+        render(metrics, output_path=tmp_path)
+        if not filecmp.cmp(committed, tmp_path, shallow=False):
+            raise ValueError(
+                "profile_dashboard.png is outdated. Run 'python scripts/gen_dashboard.py' and commit changes."
+            )
+        print("dashboard is up to date")
+    finally:
+        if os.path.exists(tmp_path):
+            os.remove(tmp_path)
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="Generate or verify profile dashboard image.")
+    parser.add_argument(
+        "--check",
+        action="store_true",
+        help="Validate metrics and verify committed profile_dashboard.png is up to date.",
+    )
+    return parser.parse_args()
+
+
 if __name__ == "__main__":
-    render(load_metrics())
+    args = parse_args()
+    loaded_metrics = load_metrics()
+    if args.check:
+        check_dashboard_is_up_to_date(loaded_metrics)
+    else:
+        render(loaded_metrics)
     sys.exit(0)

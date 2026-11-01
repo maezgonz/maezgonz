@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Profile dashboard metrics",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "strong_scaling_speedup",
+    "strong_scaling_note",
+    "gbm_throughput",
+    "gbm_note",
+    "infiniband_rtt",
+    "infiniband_rtt_note",
+    "infiniband_bw",
+    "infiniband_bw_note",
+    "gpu_cpu",
+    "gpu_cpu_note",
+    "repos",
+    "career_stages"
+  ],
+  "properties": {
+    "strong_scaling_speedup": {
+      "type": "string",
+      "minLength": 1
+    },
+    "strong_scaling_note": {
+      "type": "string",
+      "minLength": 1
+    },
+    "gbm_throughput": {
+      "type": "string",
+      "minLength": 1
+    },
+    "gbm_note": {
+      "type": "string",
+      "minLength": 1
+    },
+    "infiniband_rtt": {
+      "type": "string",
+      "minLength": 1
+    },
+    "infiniband_rtt_note": {
+      "type": "string",
+      "minLength": 1
+    },
+    "infiniband_bw": {
+      "type": "string",
+      "minLength": 1
+    },
+    "infiniband_bw_note": {
+      "type": "string",
+      "minLength": 1
+    },
+    "gpu_cpu": {
+      "type": "string",
+      "pattern": "^\\d+s / \\d+s / \\d+s$"
+    },
+    "gpu_cpu_note": {
+      "type": "string",
+      "minLength": 1
+    },
+    "repos": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "career_stages": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "array",
+        "prefixItems": [
+          {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          {
+            "type": "string",
+            "minLength": 1
+          },
+          {
+            "type": "string",
+            "pattern": "^#[0-9a-fA-F]{6}$"
+          }
+        ],
+        "items": false,
+        "minItems": 3,
+        "maxItems": 3
+      }
+    }
+  }
+}

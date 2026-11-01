@@ -20,17 +20,19 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+          cache: "pip"
+          cache-dependency-path: "requirements.txt"
 
-      - name: Install matplotlib
-        run: pip install matplotlib
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
 
       - name: Generate dashboard
         run: python scripts/gen_dashboard.py
 
       - name: Commit if changed
         run: |
-          git config user.name "maezgonz"
-          git config user.email "matiasez.gonzalez@gmail.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           if git diff --quiet profile_dashboard.png; then
             echo "No changes to dashboard"
           else

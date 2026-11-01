@@ -1,0 +1,50 @@
+name: Validate dashboard inputs
+
+on:
+  pull_request:
+    paths:
+      - "metrics.json"
+      - "metrics.schema.json"
+      - "scripts/gen_dashboard.py"
+      - "tests/**"
+      - "requirements.txt"
+      - ".github/workflows/validate-dashboard.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+          cache-dependency-path: "requirements-dev.txt"
+
+      - name: Install dependencies
+        run: python -m pip install -r requirements-dev.txt
+
+      - name: Validate metrics schema
+        run: |
+          python - <<'PY'
+          import json
+          from jsonschema import validate
+
+          with open("metrics.schema.json", "r", encoding="utf-8") as schema_file:
+              schema = json.load(schema_file)
+          with open("metrics.json", "r", encoding="utf-8") as metrics_file:
+              metrics = json.load(metrics_file)
+
+          validate(instance=metrics, schema=schema)
+          print("metrics.json matches metrics.schema.json")
+          PY
+
+      - name: Run unit tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Verify committed dashboard is up to date
+        run: python scripts/gen_dashboard.py --check
