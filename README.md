@@ -60,7 +60,6 @@ Public repositories with executable code, automation workflows, CI checks, and d
 | **[radiolink-clearance](https://github.com/maezgonz/radiolink-clearance)** | Microwave link planning using ITU-based propagation and Fresnel models | Python · Streamlit |
 | **[hpc-parallel-algorithms](https://github.com/maezgonz/hpc-parallel-algorithms)** | **Applied/Academic Project** — parallel algorithms and numerical workloads on multi-core/HPC environments | C · MPI · OpenMP · Slurm |
 | **[quant-research-lab](https://github.com/maezgonz/quant-research-lab)** | **Applied/Academic Project** — end-to-end quantitative research workflows with ML and GPU benchmarks | Python · TensorFlow · scikit-learn |
-| **[quant-trading-models](https://github.com/maezgonz/quant-trading-models)** | **Applied/Academic Project** — pricing and risk tooling for quantitative finance | Python · NumPy · pandas |
 
 ## Core Stack
 
@@ -88,4 +87,4 @@ Public repositories with executable code, automation workflows, CI checks, and d
 
 ---
 
-**Open to:** HPC engineering, quantitative research, and high-performance systems collaboration.
+**Open to:** EU remote roles in HPC, systems engineering, and automation, with schedule compatibility for ongoing MSc HPC commitments.
