@@ -31,12 +31,19 @@ The benchmark figures shown here are measured on **CESGA FinisTerrae-3**.
 - Open to **asynchronous/flexible schedules** compatible with MSc HPC commitments.
 - Occasional travel is possible when planned in advance.
 
-## Evidence Model (Recruiter-Friendly)
+## How to Evaluate This Portfolio
 
-- **E1 — Corporate Experience:** production roles in telecom operations/systems engineering.
-- **E2 — Formal Education & Certifications:** accredited degrees, MSc HPC (in progress), and vendor/cloud certifications.
-- **E3 — Public Portfolio Evidence:** GitHub repositories with reproducible code and documented outcomes.
-- **E4 — Applied/Academic Learning:** in-progress or study-driven competencies, never presented as corporate production experience.
+### Production & Enterprise Track
+
+12+ years in telecom operations and systems engineering for mission-critical environments (RAN/Core, reliability, incident response, and operational excellence).
+
+### Applied Systems & Research (USC/CESGA)
+
+HPC and quantitative workloads developed in an applied/academic context (MSc HPC), including reproducible benchmarks and parallel-computing experiments.
+
+### Open-Source Tooling & Automation Labs
+
+Public repositories with executable code, automation workflows, CI checks, and documentation designed to make results reproducible.
 
 ## Highlights
 
@@ -50,7 +57,6 @@ The benchmark figures shown here are measured on **CESGA FinisTerrae-3**.
 | Repository | Focus | Stack |
 |---|---|---|
 | **[telco-network-automation](https://github.com/maezgonz/telco-network-automation)** | Network automation and fleet-level operational checks | Python |
-| **[telco-engineering-handbook](https://github.com/maezgonz/telco-engineering-handbook)** | Telecom engineering reference and operations knowledge base | MkDocs · 3GPP · ITU-T |
 | **[radiolink-clearance](https://github.com/maezgonz/radiolink-clearance)** | Microwave link planning using ITU-based propagation and Fresnel models | Python · Streamlit |
 | **[hpc-parallel-algorithms](https://github.com/maezgonz/hpc-parallel-algorithms)** | **Applied/Academic Project** — parallel algorithms and numerical workloads on multi-core/HPC environments | C · MPI · OpenMP · Slurm |
 | **[quant-research-lab](https://github.com/maezgonz/quant-research-lab)** | **Applied/Academic Project** — end-to-end quantitative research workflows with ML and GPU benchmarks | Python · TensorFlow · scikit-learn |
